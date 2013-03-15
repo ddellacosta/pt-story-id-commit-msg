@@ -24,4 +24,4 @@ If you don't have this variable set, it will complain but your commit will just 
   * Support for more than one PT Story ID.
 
 2013 Dave Della Costa
-[MIT LICENSE](https://github.com/ddellacosta/mit-license)
+[MIT LICENSE](http://ddellacosta.mit-license.org)
