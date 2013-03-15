@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+if ENV['PT_STORY_ID'].nil? || ENV['PT_STORY_ID'] == ""
+  puts "There is no \"PT_STORY_ID\" environment variable set.  Not prepending to commit message."
+  exit
+else
+  File.open(ARGV[0], "a+") do |file|
+    commit_msg = file.gets
+    file.truncate(0)
+    file.puts "[##{ENV['PT_STORY_ID']}] #{commit_msg}"
+  end
+end
